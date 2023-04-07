@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    padding: 10%;
+}
+
+.lesson-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.lesson-link:hover {
+    color: aquamarine;
+    text-decoration: underline;
+}
