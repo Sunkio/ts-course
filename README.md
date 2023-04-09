@@ -6,3 +6,4 @@ https://www.youtube.com/watch?v=gieEQFIfgYc&t=47s
 
 - Lesson 1: 
 - Lesson 2:
+- Lesson 3: Arrays and Objects
