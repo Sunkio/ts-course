@@ -70,8 +70,44 @@ const addAll2 = (a: number, b: number, ...numbers: number[]): number => {
     return numbers.reduce((acc, cur) => acc + cur, a + b)
 }
 
-// Rest parameters
-const total = (...nums: number[]): number => {
+// Rest parameters => means "the rest of the parameters" => put it at the end of the parameter list!
+const total = (...nums: number[]): number => { // the rest parameters are always an array
     return nums.reduce((prev, cur) => prev + cur, 0)
 }
 logMsg(total(1, 2, 3, 4, 5)) // ok
+
+// never type => means "this function never returns"
+const createError = (errMsg: string) => {
+    throw new Error(errMsg)
+}
+
+/* infinite loop => this function never returns
+const infinite = () => {
+    let i: number = 1
+    while (true) {
+        i++
+    }
+}
+*/
+
+// this function returns void
+const infinite = () => {
+    let i: number = 1
+    while (true) {
+        i++
+        if (i > 100) break
+    }
+}
+
+// custom type guard
+const isString = (a: any): a is string => {
+    return typeof a === 'string' ? true : false
+}
+
+// use of never type (createError()) and custom type guard (isString())
+const numberOrSting = (a: number | string): string => {
+    if (typeof a === 'number') return a.toString()
+    if (isString(a)) return a
+
+    return createError("This should never happen!")
+}
