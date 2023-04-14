@@ -32,5 +32,10 @@ let nextVal: number = addOrConcat(1, 2, 'add') as number
 
 
 // The DOM
-const img = document.getElementById('#myId')
-const myImg = document.getElementById('#img')
+const img = document.querySelector('img')!
+const myImg = document.getElementById('#img')! as HTMLImageElement
+const nextImg = <HTMLImageElement>document.getElementById('#img') // won't work in  JSX files for React
+
+img.src
+myImg.src
+
