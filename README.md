@@ -9,3 +9,4 @@ https://www.youtube.com/watch?v=gieEQFIfgYc&t=47s
 - Lesson 3: Arrays and Objects
 - Lesson 4: Functions
 - Lesson 5: Type Assertions (official wording) / Type Casting
+- Lesson 6: Classes
