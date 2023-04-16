@@ -142,4 +142,4 @@ MyBands.data = ['The Beatles', 'The Rolling Stones', 'The Who']
 console.log(MyBands.data)
 MyBands.data = [...MyBands.data, 'The Doors']
 console.log(MyBands.data)
-MyBands.data = ['The Beatles', 'The Rolling Stones', 'The Who', 42] // throws an error because the array contains a number (not an array of strings)
+//MyBands.data = ['The Beatles', 'The Rolling Stones', 'The Who', 42] // throws an error because the array contains a number (not an array of strings)
